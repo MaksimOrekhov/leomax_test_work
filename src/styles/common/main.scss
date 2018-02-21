@@ -1,0 +1,62 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 650px;
+}
+
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 0 50px #dedede;
+}
+
+.hero {
+  &__main {
+  background: url("../images/hero_bg.png") top center no-repeat;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  }
+  &__bottom {
+    position: absolute;
+    top: 100%;
+    transform: translateY(-93%);
+    z-index: 10;
+  }
+}
+
+.main {
+  &__welcome {
+    margin-top: 78px;
+  }
+  &__gorgeous {
+    position: relative;
+    margin-top: 10px;
+    &:before,
+    &:after {
+      content: "";
+      width: 29px;
+      height: 2px;
+      background-color: #766357;
+      position: absolute;
+      top: 39%;
+      transform: translateY(-39%);
+    }
+    &:before {
+      left: -25%;
+    }
+    &:after {
+      right: -25%;
+    }
+  }
+  &__sedona {
+    margin-top: 55px;
+  }
+  &__canyon {
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+}

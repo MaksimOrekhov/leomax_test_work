@@ -1,0 +1,31 @@
+// resolutions
+
+$desktop: 1200px;
+$wide: 1800px;
+$tablets: 768px;
+$phones: 480px;
+$small-phones: 320px;
+
+@mixin wide {
+  @media screen and (max-width: $wide) {
+    @content;
+  }
+}
+
+@mixin tablets {
+  @media screen and (max-width: $tablets) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media screen and (max-width: $phones) {
+    @content;
+  }
+}
+
+@mixin small-phones {
+  @media screen and (max-width: $small-phones) {
+    @content;
+  }
+}
