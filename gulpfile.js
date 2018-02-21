@@ -41,6 +41,10 @@ const paths = {
     fav: {
         src: './*.ico',
         dest: 'build/'
+    },
+    scripts: {
+        src: 'src/scripts/**/*.js',
+        dest: 'build/assets/scripts/'
     }
 }
 
@@ -89,6 +93,7 @@ function watch() {
     gulp.watch(paths.images.src, images);
     gulp.watch(paths.fonts.src, fonts);
     gulp.watch(paths.icons.src, icons);
+    gulp.watch(paths.scripts.src, scripts);
 }
 
 // локальный сервер + livereload
@@ -137,6 +142,6 @@ exports.fav = fav;
 
 gulp.task('default', gulp.series(
     clean,
-    gulp.parallel(styles, templates, images, fonts, icons, fav),
+    gulp.parallel(styles, templates, images, scripts, fonts, icons, fav),
     gulp.parallel(watch, server)
 ));

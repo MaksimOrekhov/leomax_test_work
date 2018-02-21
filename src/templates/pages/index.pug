@@ -37,5 +37,46 @@ block content
         .features__city
           .city__left
             .city__left-title настоящий городок
-            .city__left-number - №1 -
+            .city__left-number — №1 —
             .city__left-text седона - не аттракцион для туристов, там течет своя жизнь
+        .features__icons
+          ul.icons__list
+            li.icons__item
+              .item__icon
+                include ../../icons/house_icon.svg
+              .item__title жилье
+              .item__text рекомендуем пожить в настоящем мотеле, все как в кино!
+            li.icons__item
+              .item__icon
+                include ../../icons/burger_icon.svg
+              .item__title еда
+              .item__text всегда заказывайте фирменный бургер, вы не разочаруетесь!
+            li.icons__item
+              .item__icon
+                include ../../icons/gift_icon.svg
+              .item__title сувениры
+              .item__text не только китайского, но и местного производства!
+        .features__bridge
+          .bridge__right
+            .bridge__right-title там есть мост дьявола
+            .bridge__right-number — №2 —
+            .bridge__right-text да, по нему можно пройти! если конечно вы осмелитесь
+        .features__other
+          ul.other__list
+            li.other__item
+              .item__title небольшая площадь
+              .item__number — №3 —
+              .item__desc все достопримечательности находятся очень близко
+            li.other__item
+              .item__title красивая дорога
+              .item__number — №4 —
+              .item__desc ехать в седону из лас-вегаса совсем не скучно!
+            li.other__item
+              .item__title мало туристов
+              .item__number — №5 —
+              .item__desc большинство едет в гранд каньон и толпится там
+      section.search
+        .search__title заинтересовались?
+        .search__text Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+        button.search__button поиск гостиницы в седоне
+        #map.map

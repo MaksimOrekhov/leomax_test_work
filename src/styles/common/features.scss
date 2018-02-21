@@ -1,4 +1,5 @@
 .features {
+  line-height: 1.5em;
   &__header {
   display: flex;
   flex-direction: column;
@@ -21,7 +22,17 @@
     text-transform: uppercase;
     display: flex;
     background: url("../images/city_bg.png") right center no-repeat;
-    
+    background-size: cover;
+  }
+  &__bridge {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row-reverse;
+    background: url("../images/devils_bridge.png") center center no-repeat;
+    background-size: cover;
+  }
+  &__other {
+    background-color: #eeeeee;
   }
 }
 
@@ -49,8 +60,89 @@
   }
 }
 
-.city__right {
-  background: url("../images/city_bg.png") center center no-repeat;
-  height: 100vh;
-  width: 100px;
+.icons__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icons__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 60px 0 80px 0;  
+  max-width: 285px;
+}
+
+.item {
+  &__icon {
+    width: 75px;
+    height: 75px;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 21px;
+    margin-top: 34px;
+  }
+  &__text {
+    font-size: 14px;
+    margin-top: 29px;
+  }
+}
+
+.bridge__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #81b3d2;
+  color: #fff;
+  text-align: center;
+  padding: 50px 60px 55px 60px;
+  &-title {
+    font-size: 21px;
+    font-weight: bold;
+    max-width: 155px;
+  }
+  &-number {
+    margin-top: 29px;
+    font-size: 14px;
+  }
+  &-text {
+    margin-top: 32px;
+    max-width: 305px;
+    font-size: 14px;
+  }
+}
+
+.other__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.other__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 50px 0 65px 0;  
+  max-width: 285px;
+}
+
+.item {
+  &__title {
+    font-weight: bold;
+    font-size: 21px;
+    margin-top: 34px;
+    max-width: 125px;
+  }
+  &__number {
+    margin-top: 29px;
+    font-size: 14px;
+  }
+  &__desc {
+    font-size: 14px;
+    margin-top: 29px;
+  }
 }
