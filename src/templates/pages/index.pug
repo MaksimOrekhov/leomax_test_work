@@ -4,21 +4,7 @@ block content
   .wrapper 
     .container
       section.hero
-        header.header
-          .header__logo
-            a(href="#" class="logo__link")
-              include ../../icons/logo.svg
-          .menu
-            nav.nav__menu
-              ul.menu__list
-                li.menu__item
-                  a(href="#" class="item__link") информация
-                li.menu__item
-                  a(href="#" class="item__link") фото и видео
-                li.menu__item
-                  a(href="#" class="item__link") карта штата
-                li.menu__item
-                  a(href="#" class="item__link") гостиницы
+        include ../common/header
         .hero__main
           .main__welcome
             include ../../icons/welcome.svg
@@ -79,4 +65,37 @@ block content
         .search__title заинтересовались?
         .search__text Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
         button.search__button поиск гостиницы в седоне
+        form.form__elem(action="#").active
+          .search__form
+            .form__input
+              label(class="input__label" for="checkin") дата заезда:
+              .input__date
+                input(type="text" class="form__block-input" id="checkin" name="checkin" value="24 апреля 2017" required)
+                .input__date-icon
+                  include ../../icons/calendar.svg
+            .form__input
+              label(class="input__label" for="checkin") дата выезда:
+              .input__date
+                input(type="text" class="form__block-input" id="checkout" name="checkout" value="4 июля 2017" required)
+                .input__date-icon
+                  include ../../icons/calendar.svg
+            .people__input
+              .people.adults
+                .people__lable взрослые:
+                .people__controls
+                  .controls__minus
+                    include ../../icons/minus.svg
+                  .controls__value#controls__value 2
+                  .controls__plus
+                    include ../../icons/plus.svg
+              .people.children
+                .people__lable дети:
+                .people__controls
+                  .controls__minus
+                    include ../../icons/minus.svg
+                  .controls__value#controls__value 0
+                  .controls__plus
+                    include ../../icons/plus.svg
+            button.search__form-button найти                 
         #map.map
+        include ../common/footer

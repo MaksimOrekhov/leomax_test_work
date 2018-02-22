@@ -25,4 +25,15 @@
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
+  transition: 0.4s;  
+  &--active {
+    color: #766357;
+  }
+  &:hover {
+    color: #81b3d2;
+    transition: 0.4s;
+  }
+  &:active {
+    color: #cacaca;
+  }
 }
