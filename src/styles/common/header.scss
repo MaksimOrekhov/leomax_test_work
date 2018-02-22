@@ -17,6 +17,9 @@
 
 .menu__item {
   padding: 22px 0 22px 0;
+  &:nth-child(2) {
+    margin-right: 20px;
+  }
 }
 
 .item__link {

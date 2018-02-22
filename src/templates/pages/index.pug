@@ -65,7 +65,7 @@ block content
         .search__title заинтересовались?
         .search__text Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
         button.search__button поиск гостиницы в седоне
-        form.form__elem(action="#").active
+        form.form__elem(action="#").form__elem--active
           .search__form
             .form__input
               label(class="input__label" for="checkin") дата заезда:
@@ -74,7 +74,7 @@ block content
                 .input__date-icon
                   include ../../icons/calendar.svg
             .form__input
-              label(class="input__label" for="checkin") дата выезда:
+              label(class="input__label" for="checkout") дата выезда:
               .input__date
                 input(type="text" class="form__block-input" id="checkout" name="checkout" value="4 июля 2017" required)
                 .input__date-icon
@@ -83,18 +83,18 @@ block content
               .people.adults
                 .people__lable взрослые:
                 .people__controls
-                  .controls__minus
+                  .controls__minus.controls__minus-adults
                     include ../../icons/minus.svg
-                  .controls__value#controls__value 2
-                  .controls__plus
+                  .controls__value.controls__value-adults 2
+                  .controls__plus.controls__plus-adults
                     include ../../icons/plus.svg
               .people.children
                 .people__lable дети:
                 .people__controls
-                  .controls__minus
+                  .controls__minus.controls__minus-children
                     include ../../icons/minus.svg
-                  .controls__value#controls__value 0
-                  .controls__plus
+                  .controls__value.controls__value-children 0
+                  .controls__plus.controls__plus-children
                     include ../../icons/plus.svg
             button.search__form-button найти                 
         #map.map
