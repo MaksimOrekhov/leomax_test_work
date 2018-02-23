@@ -63,39 +63,80 @@
           <form class="filter__form">
             <div class="filter__form-wrapper">
               <div class="filter__checkbox">
-                <div class="checkbox__title">инфраструктура:</div>
-                <ul class="filter__list">
-                  <li class="filter__item">
-                    <input class="item__checkbox" type="checkbox" id="item__pool">
-                    <label class="item__label" for="item__pool">бассейн</label>
-                  </li>
-                  <li class="filter__item">
-                    <input class="item__checkbox" type="checkbox" id="item__parking">
-                    <label class="item__label" for="item__parking">парковка</label>
-                  </li>
-                  <li class="filter__item">
-                    <input class="item__checkbox" type="checkbox" id="item__wi-fi">
-                    <label class="item__label" for="item__wi-fi">wi-fi</label>
-                  </li>
-                </ul>
-                <div class="block__title">тип жилья:</div>
-                <ul class="filter__list">
-                  <li class="filter__item">
-                    <input class="item__checkbox" type="checkbox" id="item__hotel">
-                    <label class="item__label" for="item__hotel">гостиница</label>
-                  </li>
-                  <li class="filter__item">
-                    <input class="item__checkbox" type="checkbox" id="item__motel">
-                    <label class="item__label" for="item__motel">мотель</label>
-                  </li>
-                  <li class="filter__item">
-                    <input class="item__checkbox" type="checkbox" id="item__apartments">
-                    <label class="item__label" for="item__apartments">апартаменты</label>
-                  </li>
-                </ul>
+                <div class="checkbox__wrapper">
+                  <div class="checkbox__title">инфраструктура:</div>
+                  <ul class="filter__list">
+                    <li class="filter__item">
+                      <label class="item__label" for="item__pool">
+                        <input class="item__checkbox" type="checkbox" id="item__pool" checked><span class="fake__checkbox"><span class="fake__checkbox-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M9 21.035l-9-8.638 2.791-2.87 6.156 5.874 12.21-12.436 2.843 2.817z"/></svg></span></span><span class="checkbox__label">бассейн</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label class="item__label" for="item__parking">
+                        <input class="item__checkbox" type="checkbox" id="item__parking"><span class="fake__checkbox"><span class="fake__checkbox-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M9 21.035l-9-8.638 2.791-2.87 6.156 5.874 12.21-12.436 2.843 2.817z"/></svg></span></span><span class="checkbox__label">парковка</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label class="item__label" for="item__wi-fi">
+                        <input class="item__checkbox" type="checkbox" id="item__wi-fi"><span class="fake__checkbox"><span class="fake__checkbox-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M9 21.035l-9-8.638 2.791-2.87 6.156 5.874 12.21-12.436 2.843 2.817z"/></svg></span></span><span class="checkbox__label">wi-fi</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="checkbox__wrapper">
+                  <div class="checkbox__title">тип жилья:</div>
+                  <ul class="filter__list">
+                    <li class="filter__item">
+                      <label class="item__label" for="item__hotel">
+                        <input class="item__checkbox" type="checkbox" id="item__hotel" checked><span class="fake__checkbox"><span class="fake__checkbox-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M9 21.035l-9-8.638 2.791-2.87 6.156 5.874 12.21-12.436 2.843 2.817z"/></svg></span></span><span class="checkbox__label">гостиница</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label class="item__label" for="item__motel">
+                        <input class="item__checkbox" type="checkbox" id="item__motel" checked><span class="fake__checkbox"><span class="fake__checkbox-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M9 21.035l-9-8.638 2.791-2.87 6.156 5.874 12.21-12.436 2.843 2.817z"/></svg></span></span><span class="checkbox__label">мотель</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label class="item__label" for="item__apartments">
+                        <input class="item__checkbox" type="checkbox" id="item__apartments" checked><span class="fake__checkbox"><span class="fake__checkbox-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M9 21.035l-9-8.638 2.791-2.87 6.156 5.874 12.21-12.436 2.843 2.817z"/></svg></span></span><span class="checkbox__label">апартаменты</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="filter__price">
+                <div class="price__title">стоимость в сутки (р):</div>
+                <div class="price__range">
+                  <div class="range__start">от 0</div>
+                  <div class="range__end">до 3000</div>
+                </div>
+                <div class="price__scale">
+                  <div class="scale__min"></div>
+                  <div class="scale__max"></div>
+                </div>
+                <button class="price__button">показать</button>
               </div>
             </div>
           </form>
+        </section>
+        <section class="sorting">
+          <div class="sorting__container">
+            <div class="sorting__left">
+              <div class="sorting__result">найдено: 3</div>
+              <div class="sorting__props">
+                <div class="props__title">сортировка:</div>
+                <div class="props__price props props__active">по цене</div>
+                <div class="props__type props">по типу</div>
+                <div class="props__rating props">по рейтингу</div>
+              </div>
+            </div>
+            <div class="sorting__right">
+              <div class="sorting__arrow">
+                <div class="arrow__up"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 22h-24l12-20z"/></svg></div>
+                <div class="arrow__down arrow__active"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 22h-24l12-20z"/></svg></div>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </div>

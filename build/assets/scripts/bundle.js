@@ -19,9 +19,9 @@
   Object.defineProperty(n, "__esModule", { value: !0 });var r = t(1),
       o = t.n(r),
       c = t(2),
-      l = t.n(c);var u = function u() {
-    o()(), l()();
-  };"complete" === document.readyState ? u() : document.addEventListener("DOMContentLoaded", u);
+      u = t.n(c);var l = function l() {
+    o()(), u()();
+  };"complete" === document.readyState ? l() : document.addEventListener("DOMContentLoaded", l);
 }, function (e, n) {
   e.exports = function () {
     if (document.getElementById("map")) {
@@ -30,7 +30,7 @@
   };
 }, function (e, n) {
   e.exports = function () {
-    if (document.getElementsByClassName("form__elem")) {
+    if (document.querySelector(".form__elem")) {
       var _e2 = document.querySelector(".search__button"),
           _n = document.querySelector(".form__elem");_e2.addEventListener("click", function () {
         _n.classList.toggle("form__elem--active");
@@ -41,11 +41,11 @@
       }), r.addEventListener("click", function () {
         var e = Number(o.innerHTML);o.innerHTML = e - 1, 0 === e && (o.innerHTML = 0);
       });var c = document.querySelector(".controls__plus-children"),
-          l = document.querySelector(".controls__minus-children"),
-          u = document.querySelector(".controls__value-children");c.addEventListener("click", function () {
-        var e = Number(u.innerHTML);u.innerHTML = e + 1;
-      }), l.addEventListener("click", function () {
-        var e = Number(u.innerHTML);u.innerHTML = e - 1, 0 === e && (u.innerHTML = 0);
+          u = document.querySelector(".controls__minus-children"),
+          l = document.querySelector(".controls__value-children");c.addEventListener("click", function () {
+        var e = Number(l.innerHTML);l.innerHTML = e + 1;
+      }), u.addEventListener("click", function () {
+        var e = Number(l.innerHTML);l.innerHTML = e - 1, 0 === e && (l.innerHTML = 0);
       });document.querySelector(".search__form-button").addEventListener("click", function (e) {
         e.preventDefault;
       });

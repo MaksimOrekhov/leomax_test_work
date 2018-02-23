@@ -8,25 +8,78 @@ block content
         form.filter__form
           .filter__form-wrapper
             .filter__checkbox
-              .checkbox__title инфраструктура:
-              ul.filter__list
-                li.filter__item
-                  input(type="checkbox" class="item__checkbox" id="item__pool")
-                  label(for="item__pool" class="item__label") бассейн
-                li.filter__item
-                  input(type="checkbox" class="item__checkbox" id="item__parking")
-                  label(for="item__parking" class="item__label") парковка
-                li.filter__item
-                  input(type="checkbox" class="item__checkbox" id="item__wi-fi")
-                  label(for="item__wi-fi" class="item__label") wi-fi
-              .block__title тип жилья:
-              ul.filter__list
-                li.filter__item
-                  input(type="checkbox" class="item__checkbox" id="item__hotel")
-                  label(for="item__hotel" class="item__label") гостиница
-                li.filter__item
-                  input(type="checkbox" class="item__checkbox" id="item__motel")
-                  label(for="item__motel" class="item__label") мотель
-                li.filter__item
-                  input(type="checkbox" class="item__checkbox" id="item__apartments")
-                  label(for="item__apartments" class="item__label") апартаменты
+              .checkbox__wrapper
+                .checkbox__title инфраструктура:
+                ul.filter__list
+                  li.filter__item
+                    label(for="item__pool" class="item__label")
+                      input(type="checkbox" class="item__checkbox" id="item__pool" checked)
+                      span.fake__checkbox
+                        span.fake__checkbox-icon
+                          include ../../icons/check-mark.svg
+                      span.checkbox__label бассейн
+                  li.filter__item
+                    label(for="item__parking" class="item__label")
+                      input(type="checkbox" class="item__checkbox" id="item__parking")
+                      span.fake__checkbox
+                        span.fake__checkbox-icon
+                          include ../../icons/check-mark.svg
+                      span.checkbox__label парковка
+                  li.filter__item
+                    label(for="item__wi-fi" class="item__label")
+                      input(type="checkbox" class="item__checkbox" id="item__wi-fi")
+                      span.fake__checkbox
+                        span.fake__checkbox-icon
+                          include ../../icons/check-mark.svg
+                      span.checkbox__label wi-fi
+              .checkbox__wrapper
+                .checkbox__title тип жилья:
+                ul.filter__list
+                  li.filter__item
+                    label(for="item__hotel" class="item__label")
+                      input(type="checkbox" class="item__checkbox" id="item__hotel" checked)
+                      span.fake__checkbox
+                        span.fake__checkbox-icon
+                          include ../../icons/check-mark.svg
+                      span.checkbox__label гостиница
+                  li.filter__item
+                    label(for="item__motel" class="item__label")
+                      input(type="checkbox" class="item__checkbox" id="item__motel" checked)
+                      span.fake__checkbox
+                        span.fake__checkbox-icon
+                          include ../../icons/check-mark.svg
+                      span.checkbox__label мотель
+                  li.filter__item
+                    label(for="item__apartments" class="item__label")
+                      input(type="checkbox" class="item__checkbox" id="item__apartments" checked)
+                      span.fake__checkbox
+                        span.fake__checkbox-icon
+                          include ../../icons/check-mark.svg
+                      span.checkbox__label апартаменты
+            .filter__price
+              .price__title стоимость в сутки (р):
+              .price__range
+                .range__start от 0
+                .range__end до 3000
+              .price__scale
+                .scale__min
+                .scale__max
+              button.price__button показать
+      
+      section.sorting
+        .sorting__container
+          .sorting__left
+            .sorting__result найдено: 3
+            .sorting__props
+              .props__title сортировка:
+              .props__price.props.props__active по цене
+              .props__type.props по типу
+              .props__rating.props по рейтингу
+          .sorting__right
+            .sorting__arrow
+              .arrow__up
+                include ../../icons/triangle.svg
+              .arrow__down.arrow__active
+                include ../../icons/triangle.svg
+          
+

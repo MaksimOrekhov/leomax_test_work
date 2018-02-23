@@ -1,0 +1,270 @@
+.filter {
+  background: url('../images/filter_bg.png') center center no-repeat;
+  &__form {
+    color: #fff;
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 72px;
+    }
+  }
+  &__checkbox {
+    display: flex;
+  }
+  &__list {
+    margin-top: 29px;
+  }
+  &__item:not(:first-child) {
+    margin-top: 23px;
+  }
+  
+}
+
+.checkbox__wrapper {
+  display: flex;
+  flex-direction: column;
+  &:first-child {
+    margin-right: 115px;
+  }
+}
+
+.checkbox__title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.item__label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.item {
+  &__checkbox {
+    position: absolute;
+    left: -9999px;
+  }
+}
+
+.fake__checkbox {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  background-color: transparent;
+  margin-right: 10px;
+  
+  &-icon {
+    opacity: 0;
+    transition: 0.4s;
+    position: absolute;
+    top: -20%;
+    left: 10%;
+    & > svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.item__checkbox:checked + .fake__checkbox > .fake__checkbox-icon {
+  opacity: 1;
+  transition: 0.4s;
+  position: absolute;
+  top: -20%;
+  left: 10%;
+}
+
+.checkbox__label {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.filter__price {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price {
+  &__title {
+    font-weight: bold;
+    align-self: left;
+  }
+  &__range {
+    display: flex;
+    padding: 11px 65px;
+    justify-content: space-between;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    width: 320px;
+    margin-top: 15px;
+  }
+  &__scale {
+    width: 305px;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 20px;
+    position: relative;
+  }
+  &__button {
+    margin-top: 32px;
+    padding: 11px 33px;
+    color: #fff;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #fff;
+    font-family: "PTsans", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+  }
+}
+
+.range__start {
+  width: 55px;
+  text-align: center;
+  position: relative;
+  margin-right: 30px;
+  &:after {
+    content: '';
+    width: 2px;
+    height: 24px;
+    background-color: #fff;
+    position: absolute;
+    right: -55%;
+    top: -10%;
+  }
+}
+
+.scale__min {
+  border: 11px solid #ffffff;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: -7px;
+  &:after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+}
+
+.scale__max {
+  border: 11px solid #ffffff;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: 170px;
+  &:after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+}
+
+.sorting {
+  &__container {
+    padding: 35px 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+  &__result {
+    font-weight: bold;
+    font-size: 21px;
+    text-transform: uppercase;
+    margin-right: 50px;
+  }
+  &__props {
+    display: flex;
+    font-size: 12px;
+    text-transform: uppercase;
+    align-items: center;
+  }
+  &__arrow {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.props {
+  cursor: pointer;
+  color: #d9d9d9;
+  border-bottom: 1px dotted #81b3d2;
+  padding: 2px;
+  &:hover {
+    color: #a8c9de;
+  }
+  &:active {
+    color: #000;
+    border: none;
+  }
+  &__active {
+    color: #a8c9de;
+    border: none;
+  }
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__title {
+    margin-right: 40px;
+  }
+}
+
+.arrow__up,
+.arrow__down {
+  cursor: pointer;
+  &:hover {
+    & svg path {
+      fill: #000;
+    }
+  }
+  &:active {
+    & svg path {
+      fill: #81b3d2;
+    }
+  }
+  & svg path {
+    fill: #cacaca;
+  }
+  & svg {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.arrow__down {
+  margin-left: 12px;
+  transform: rotate(180deg);
+}
+
+.arrow__active {
+  & svg path {
+    fill: #81b3d2;
+  }
+}

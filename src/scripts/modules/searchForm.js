@@ -1,5 +1,5 @@
 module.exports = () => {
-  if (document.getElementsByClassName('form__elem')) {
+  if (document.querySelector('.form__elem')) {
     // реализация открытия-закрытия формы поиска
     let openButton = document.querySelector('.search__button');
     let form = document.querySelector('.form__elem');
