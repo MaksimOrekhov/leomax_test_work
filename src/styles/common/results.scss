@@ -1,0 +1,113 @@
+.results__item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.item {
+  &__container {
+    padding: 30px 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+  &__img {
+    margin-right: 30px;
+    width: 135px;
+    height: 90px;
+  }
+  &__info {
+    text-transform: uppercase;
+  }
+}
+
+.info {
+  &__title {
+    font-size: 21px;
+    font-weight: bold;
+    &-link {
+      color: #000;
+      text-decoration: none;
+      transition: 0.4s;
+      &:hover {
+        color: #81b3d2;
+        transition: 0.4s;
+      }
+      &:active {
+        color: #cacaca;
+      }
+    }
+  }
+  &__name {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 185px;
+    font-size: 14px;
+  }
+  &__button {
+    margin-top: 10px;
+  }
+}
+
+.button__more,
+.button__booking {
+  font-size: 14px;
+  font-family: "PTsans", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  padding: 7px 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+.button__more {
+  margin-right: 6px;
+  background-color: #81b3d2;
+  border: transparent;
+  transition: 0.4s;
+  &:hover {
+    background-color: #669ec0;
+    transition: 0.4s;
+  }
+  &:active {
+    background-color: #5496bd;
+    color: #94b9d2;
+  }
+}
+
+.button__booking {
+  background-color: #766357;
+  border: transparent;
+  transition: 0.4s;
+  &:hover {
+    background-color: #604e43;
+    transition: 0.4s;
+  }
+  &:active {
+    background-color: #503e33;
+    color: #928a85;
+  }
+}
+
+.rating__stars {
+  margin-bottom: 47px;
+  text-align: right;
+  & svg:not(:last-child) {
+    margin-right: 6px;
+  }
+  & svg path {
+    fill: #81b3d2;
+  }
+}
+
+.rating__number {
+  padding: 7px 16px;
+  background-color: #f2f2f2;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #666666;
+}

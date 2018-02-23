@@ -122,6 +122,12 @@
     cursor: pointer;
     border-radius: 3px;
     outline: none;
+    transition: 0.4s;
+    &:hover {
+      background-color: #fff;
+      color: #000;
+      transition: 0.4s;
+    }
   }
 }
 
@@ -184,6 +190,7 @@
 }
 
 .sorting {
+  border-bottom: 1px solid #e5e5e5;
   &__container {
     padding: 35px 72px;
     display: flex;

@@ -64,7 +64,7 @@ block content
               .price__scale
                 .scale__min
                 .scale__max
-              button.price__button показать
+              button(type="submit" class="price__button") показать
       
       section.sorting
         .sorting__container
@@ -81,5 +81,70 @@ block content
                 include ../../icons/triangle.svg
               .arrow__down.arrow__active
                 include ../../icons/triangle.svg
-          
+      
+      section.results
+        ul.results__list
+          li.results__item
+            .item__container
+              .item__left
+                .item__img
+                  img(src="./assets/images/img-1.png", alt="")
+                .item__info
+                  a(href="#" class="info__title-link")
+                    .info__title amara resort & spa
+                  .info__name
+                    span.name__text гостиница
+                    span.name__price от 4000 р.
+                  .info__button
+                    button.button__more подробнее
+                    button.button__booking забронировать
+              .item__rating
+                .rating__stars
+                  include ../../icons/star.svg
+                  include ../../icons/star.svg
+                  include ../../icons/star.svg
+                  include ../../icons/star.svg
+                .rating__number рейтинг: 8,5
+          li.results__item
+            .item__container
+              .item__left
+                .item__img
+                  img(src="./assets/images/img-2.png", alt="")
+                .item__info
+                  a(href="#" class="info__title-link")
+                    .info__title desert quail inn
+                  .info__name
+                    span.name__text мотель
+                    span.name__price от 3000 р.
+                  .info__button
+                    button.button__more подробнее
+                    button.button__booking забронировать
+              .item__rating
+                .rating__stars
+                  include ../../icons/star.svg
+                  include ../../icons/star.svg
+                  include ../../icons/star.svg
+                .rating__number рейтинг: 8,9
+          li.results__item
+            .item__container
+              .item__left
+                .item__img
+                  img(src="./assets/images/img-3.png", alt="")
+                .item__info
+                  a(href="#" class="info__title-link")
+                    .info__title villas at poco diablo
+                  .info__name
+                    span.name__text апартаменты
+                    span.name__price от 2000 р.
+                  .info__button
+                    button.button__more подробнее
+                    button.button__booking забронировать
+              .item__rating
+                .rating__stars
+                  include ../../icons/star.svg
+                  include ../../icons/star.svg
+                .rating__number рейтинг: 9,2
+
+      include ../common/footer
+
 
